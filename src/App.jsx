@@ -7,6 +7,7 @@ import HeroSection from './components/HeroSection'
 import HighlightsSection from './components/HighlightsSection'
 import JamesSection from './components/JamesSection'
 import MaurisSection from './components/MaurisSections'
+import ZeroSection from './components/ZeroSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
     <HighlightsSection/>
     <JamesSection/>
     <MaurisSection/>
+    <ZeroSection/>
     </div>
   )
 }
