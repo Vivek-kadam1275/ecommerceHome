@@ -9,6 +9,7 @@ import JamesSection from './components/JamesSection'
 import MaurisSection from './components/MaurisSections'
 import ZeroSection from './components/ZeroSection'
 import SecondBooksSection from './components/SecondBooksSection'
+import TypewriterSection from './components/TypewriterSection'
  
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
     <MaurisSection/>
     <ZeroSection/>
     <SecondBooksSection/>
+    <TypewriterSection/>
    
     </div>
   )
