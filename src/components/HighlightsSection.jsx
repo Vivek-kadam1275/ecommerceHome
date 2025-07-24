@@ -64,6 +64,8 @@ export default function HighlightsSection() {
     //     }, 400);
     // };
 
+
+    
     return (
         <div className="max-w-[1192px] w-10/12 mx-auto  py-10 bg-white flex flex-col items-center gap-12">
 
@@ -74,15 +76,18 @@ export default function HighlightsSection() {
                 {features.map((feat, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center min-w-[230px] max-w-[305px] h-[215.6px]   text-[14px]  px-[23px] gap-[8px]   transition-all duration-300 justify-center"
+                        className="flex "
                     >
-                        <div className="rounded-full bg-[#f3f4f6]  w-[96px] h-[96px] flex items-center justify-center">
-                            <img src={feat.image} className=" w-[40px] h-[40px]     " />
-                        </div>
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800 w-fit">{feat.title}</h3>
-                        <p className="text-gray-600 text-sm text-center w-[219px]">{feat.desc}</p>
-                        <p className="uppercase underline  underline-offset-4 decoration-2 decoration-[#b58352] cursor-pointer">read more</p>
+                        <div className="flex flex-col items-center min-w-[230px] max-w-[305px] h-[215.6px]   text-[14px]  px-[23px] gap-[8px]   transition-all duration-300 justify-center">
+                            <div className="rounded-full bg-[#f3f4f6]  w-[96px] h-[96px] flex items-center justify-center">
+                                <img src={feat.image} className=" w-[40px] h-[40px]     " />
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2 text-gray-800 w-fit">{feat.title}</h3>
+                            <p className="text-gray-600 text-sm text-center w-[219px]">{feat.desc}</p>
+                            <p className="uppercase underline  underline-offset-4 decoration-2 decoration-[#b58352] cursor-pointer">read more</p>
 
+                        </div>
+                        {index <= 2 ? <div className="h-full w-[1px] bg-[#efefef]"></div> : <div className=""></div>}
                     </div>
                 ))}
             </div>
@@ -90,10 +95,16 @@ export default function HighlightsSection() {
             <div className="w-[1192px]  flex flex-wrap px-4 justify-between gap-1 ">
 
                 {features2.map((feat, index) => {
-                    return (
-                        <div className="w-[370px] h-[500px]">
-                            <div style={{ backgroundImage: `url(${feat.bg})` }} className={`bg-cover bg-center p-6 w-[370px] h-[500px] cursor-pointer  `}>
 
+                    
+                    return (
+                        <div className="w-[370px] h-[500px] overflow-hidden" key={index}>
+                            <div  className={`group bg-cover bg-center p-6 w-[370px] h-[500px] cursor-pointer  relative`}>
+                                <img
+                                    src={feat.bg}
+                                    alt=""
+                                    className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110  "
+                                />
                                 <div key={index} className=" flex  flex-col items-center w-full h-full text-center justify-center px-4 gap-4 border  bg-white/80 backdrop-blur-[2px] ">
                                     <p className="text-[#af7f61] uppercase font-bold">{feat.title} </p>
                                     <p className="font-semibold text-2xl text-center">
@@ -109,6 +120,7 @@ export default function HighlightsSection() {
 
                                 </div>
                             </div>
+
 
                         </div>
                     )

@@ -8,7 +8,7 @@ const slides = [
     description:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...",
     image: "/images-vivek-kadam/book-slider-s1-img.png.jpg",
-    bg:"/images-vivek-kadam/book-bg-slider-1.jpg",
+    bg: "/images-vivek-kadam/book-bg-slider-1.jpg",
   },
   {
     title: "Escape Book Charles Fredrick",
@@ -16,7 +16,7 @@ const slides = [
     description:
       "Escape into the mystery and thrill of adventures with Charles Fredrick’s bestseller book series.",
     image: "/images-vivek-kadam/book-slider-s3-img.png.jpg",
-    bg:"/images-vivek-kadam/book-bg-slider-2.jpg",
+    bg: "/images-vivek-kadam/book-bg-slider-2.jpg",
   },
   {
     title: "Simply Elegant Humbert Jemmy",
@@ -24,7 +24,7 @@ const slides = [
     description:
       "A refined collection of writing and visual storytelling by Humbert Jemmy that is truly elegant.",
     image: "/images-vivek-kadam/book-slider-s2-img.png.jpg",
-    bg:"/images-vivek-kadam/book-bg-slider-3.jpg",
+    bg: "/images-vivek-kadam/book-bg-slider-3.jpg",
   }
 ];
 
@@ -46,18 +46,18 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative  mx-auto w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center px-6 sm:px-12 bg-cover bg-center " style={{ backgroundImage: `url(${slides[current].bg})` }}>
+    <section className="group relative  mx-auto w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center px-6 sm:px-12 bg-cover bg-center " style={{ backgroundImage: `url(${slides[current].bg})` }}>
       {/* Arrows */}
       <button
         onClick={() => goToSlide("prev")}
-        className="absolute left-4 z-10 bg-white/80 hover:bg-white/100 transition p-3 rounded-full shadow"
+        className="absolute left-4 z-10 bg-white/80 hover:bg-white/100  p-3 rounded-full shadow opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
       >
         <FaChevronLeft />
       </button>
 
       <button
         onClick={() => goToSlide("next")}
-        className="absolute right-4 z-10 bg-white/80 hover:bg-white/100 transition p-3 rounded-full shadow"
+        className="absolute right-4 z-10 bg-white/80 hover:bg-white/100   p-3 rounded-full shadow opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
       >
         <FaChevronRight />
       </button>
@@ -70,20 +70,18 @@ export default function HeroSection() {
             key={slides[current].image}
             src={slides[current].image}
             alt="Book"
-            className={`max-h-[80%] w-auto object-contain shadow-lg rounded transition-all duration-500 ease-in-out ${
-              animating ? "opacity-0 scale-95" : "opacity-100 scale-100"
-            }`}
+            className={`max-h-[80%] w-auto object-contain shadow-lg rounded transition-all duration-500 ease-in-out ${animating ? "opacity-0 scale-95" : "opacity-100 scale-100"
+              }`}
           />
         </div>
 
         {/* Right content */}
         <div
           key={slides[current].title}
-          className={`w-1/2 space-y-5 transition-all duration-500 ease-in-out ${
-            animating
+          className={`w-1/2 space-y-5 transition-all duration-500 ease-in-out ${animating
               ? "opacity-0 translate-y-6"
               : "opacity-100 translate-y-0"
-          }`}
+            }`}
         >
           <p className="text-sm uppercase text-gray-500 tracking-widest">
             {slides[current].subtitle}
