@@ -10,6 +10,8 @@ import MaurisSection from './components/MaurisSections'
 import ZeroSection from './components/ZeroSection'
 import SecondBooksSection from './components/SecondBooksSection'
 import TypewriterSection from './components/TypewriterSection'
+import MaurisSecondSection from './components/MaurisSecondSection'
+import CommodoSection from './components/CommodoSection'
  
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +26,8 @@ function App() {
     <ZeroSection/>
     <SecondBooksSection/>
     <TypewriterSection/>
+    <MaurisSecondSection/>
+    <CommodoSection/>
    
     </div>
   )
