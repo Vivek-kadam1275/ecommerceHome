@@ -13,6 +13,8 @@ import TypewriterSection from './components/TypewriterSection'
 import MaurisSecondSection from './components/MaurisSecondSection'
 import CommodoSection from './components/CommodoSection'
 import InstaSection from './components/InstaSection'
+import FooterSection1 from './components/FooterSection1'
+import FooterSection2 from './components/FooterSection2'
  
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +32,8 @@ function App() {
     <MaurisSecondSection/>
     <CommodoSection/>
     <InstaSection/>
+    <FooterSection1/>
+    <FooterSection2/>
    
     </div>
   )
