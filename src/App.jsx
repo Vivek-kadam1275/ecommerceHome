@@ -12,12 +12,13 @@ import SecondBooksSection from './components/SecondBooksSection'
 import TypewriterSection from './components/TypewriterSection'
 import MaurisSecondSection from './components/MaurisSecondSection'
 import CommodoSection from './components/CommodoSection'
+import InstaSection from './components/InstaSection'
  
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
+    <div className=' overflow-x-hidden'>
     <Navbar/>
     <HeroSection/>
     <HighlightsSection/>
@@ -28,6 +29,7 @@ function App() {
     <TypewriterSection/>
     <MaurisSecondSection/>
     <CommodoSection/>
+    <InstaSection/>
    
     </div>
   )

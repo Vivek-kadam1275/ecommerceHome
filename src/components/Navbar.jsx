@@ -8,7 +8,7 @@ import { LiaDollarSignSolid } from "react-icons/lia";
 
 const Navbar = (props) => {
     return (
-        <div className="  lg:h-20 flex justify-center w-full  border-b border-b-gray-200">
+        <div className="  lg:h-20 flex justify-center w-screen  border-b border-b-gray-200">
 
             <div className="flex w-11/12 h-full     items-center     ">
                 <div className="w-9/12 flex uppercase justify-between border-r  border-r-gray-200 px-5 h-full items-center">
