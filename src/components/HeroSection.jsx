@@ -7,21 +7,24 @@ const slides = [
     subtitle: "World Bestsellers",
     description:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...",
-    image: "/images-vivek-kadam/book-slider-s1-img.png.webp"
+    image: "/images-vivek-kadam/book-slider-s1-img.png.jpg",
+    bg:"/images-vivek-kadam/book-bg-slider-1.jpg",
   },
   {
     title: "Escape Book Charles Fredrick",
     subtitle: "World Bestsellers",
     description:
       "Escape into the mystery and thrill of adventures with Charles Fredrick’s bestseller book series.",
-    image: "/images-vivek-kadam/book-slider-s2-img.png.webp"
+    image: "/images-vivek-kadam/book-slider-s3-img.png.jpg",
+    bg:"/images-vivek-kadam/book-bg-slider-2.jpg",
   },
   {
     title: "Simply Elegant Humbert Jemmy",
     subtitle: "World Bestsellers",
     description:
       "A refined collection of writing and visual storytelling by Humbert Jemmy that is truly elegant.",
-    image: "/images-vivek-kadam/book-slider-s3-img.png.webp"
+    image: "/images-vivek-kadam/book-slider-s2-img.png.jpg",
+    bg:"/images-vivek-kadam/book-bg-slider-3.jpg",
   }
 ];
 
@@ -43,7 +46,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative  mx-auto w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center px-6 sm:px-12 ">
+    <section className="relative  mx-auto w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center px-6 sm:px-12 bg-cover bg-center " style={{ backgroundImage: `url(${slides[current].bg})` }}>
       {/* Arrows */}
       <button
         onClick={() => goToSlide("prev")}
@@ -60,7 +63,7 @@ export default function HeroSection() {
       </button>
 
       {/* Slide Content */}
-      <div className="flex items-center justify-between w-full max-w-[1192px] h-full gap-6">
+      <div className="flex items-center justify-between w-full max-w-[1192px] h-full gap-6 " >
         {/* Left image */}
         <div className="w-1/2 flex items-center justify-center h-full transition-all duration-500 ease-in-out">
           <img
