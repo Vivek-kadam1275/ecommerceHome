@@ -65,7 +65,7 @@ export default function HighlightsSection() {
     // };
 
 
-    
+
     return (
         <div className="max-w-[1192px] w-10/12 mx-auto  py-10 bg-white flex flex-col items-center gap-12">
 
@@ -96,10 +96,10 @@ export default function HighlightsSection() {
 
                 {features2.map((feat, index) => {
 
-                    
+
                     return (
                         <div className="w-[370px] h-[500px] overflow-hidden" key={index}>
-                            <div  className={`group bg-cover bg-center p-6 w-[370px] h-[500px] cursor-pointer  relative`}>
+                            <div className={`group bg-cover bg-center p-6 w-[370px] h-[500px] cursor-pointer  relative`}>
                                 <img
                                     src={feat.bg}
                                     alt=""

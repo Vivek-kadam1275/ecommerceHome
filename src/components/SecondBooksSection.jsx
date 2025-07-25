@@ -37,7 +37,7 @@ const books=[
         price:"$319.00",
 
     },
-]
+] 
 const SecondBooksSection = (props) => {
   return (
     <div className="   flex justify-between items-center pt-20 text-white">
