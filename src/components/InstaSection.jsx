@@ -1,4 +1,6 @@
 import React from "react"
+import { FaRegMessage } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
 
 const InstaSection = (props) => {
     const images = [
@@ -86,25 +88,28 @@ const InstaSection = (props) => {
 
     ]
     return (
-        <div className="flex flex-wrap  w-screen mt-20 relative">
+        <div className="flex  flex-wrap  lg:w-screen mt-20 relative h-auto">
             {images.map((image, index) => {
-                return (<div key={index} className="cursor-pointer group relative">
+                return (<div key={index} className="cursor-pointer group relative md:w-1/4 lg:w-1/6 lg:h-1/6 sm:w-1/2 sm:h-1/2">
 
-                    <img src={image.image} alt="" className="w-[256px] h-[256px] " />
+                    <img src={image.image} alt="" className=" " />
                     <div className="absolute top-0 left-0 bottom-0 right-0 z-20 group-hover:bg-black/40 "> </div>
                     <div className="absolute bottom-2 w-[80%] hidden group-hover:flex z-40 text-white justify-between mx-4">
-                        <p>{image.likes}</p>
-                        <p>{image.comments}</p>
+                        <p className="flex items-center gap-2"><CiHeart className="w-7 h-7" /><span>{image.likes}</span></p>
+                        <p className="flex items-center gap-2"><FaRegMessage /> <span>{image.comments}</span></p>
                     </div>
                 </div>)
             })}
 
-            <div className="w-[300px] h-[219px] bg-white flex flex-col items-center justify-center gap-2 absolute top-[29%] left-[40%] z-40">
-                <h1 className="w-fit text-[#242424] text-[18px]">INSTAGRAM</h1>
-                <p className="w-fit text-[#c4c4c4] text-[12px]">@WOOD_BOOKS</p>
-                <p className="max-w-[240px] text-center text-[#7d7d7d] text-[14px] ">
-                    Porttitor adipiscing a velmus lacinia parturient adipiscing lobortis vestibulum lacinia class.
-                </p>
+            <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center ">
+
+                <div className="w-[300px] h-[219px] bg-white flex flex-col items-center justify-center gap-2  ">
+                    <h1 className="w-fit text-[#242424] text-[18px]">INSTAGRAM</h1>
+                    <p className="w-fit text-[#c4c4c4] text-[12px]">@WOOD_BOOKS</p>
+                    <p className="max-w-[240px] text-center text-[#7d7d7d] text-[14px] ">
+                        Porttitor adipiscing a velmus lacinia parturient adipiscing lobortis vestibulum lacinia class.
+                    </p>
+                </div>
             </div>
         </div>
     )
