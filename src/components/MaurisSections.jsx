@@ -55,9 +55,9 @@ const MaurisSection = (props) => {
             <h1 className="leading-none text-[42px] ">Featured Releases</h1>
             <p className="text-[14px] text-[#767676]">There are many variations of passages of lorem ipsum available.</p>
             <div className="text-[16px] text-[#767676] flex gap-8">
-                <button className="uppercase border underline  underline-offset-4 decoration-2 decoration-[#b58352] cursor-pointer">Biography</button>
-                <button className="uppercase border hover:underline underline-offset-4 decoration-2 decoration-[#b58352] transition-all duration-700">Fantansy</button>
-                <button className="uppercase border hover:underline underline-offset-4 decoration-2 decoration-[#b58352] transition-all duration-700">History</button>
+                <button className="uppercase  underline  underline-offset-4 decoration-2 decoration-[#b58352] cursor-pointer">Biography</button>
+                <button className="uppercase  hover:underline underline-offset-4 decoration-2 decoration-[#b58352] transition-all duration-700">Fantansy</button>
+                <button className="uppercase  hover:underline underline-offset-4 decoration-2 decoration-[#b58352] transition-all duration-700">History</button>
             </div>
             <div className="w-full flex flex-wrap gap-[20px]">
               {books.map((book,id)=>{
