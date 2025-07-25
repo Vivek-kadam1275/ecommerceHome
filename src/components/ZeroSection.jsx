@@ -5,7 +5,7 @@ const ZeroSection = (props) => {
         <div>
             <div className=" flex pt-20">
                 <div className=" w-1/2 h-[680px]  bg-[url('./images-vivek-kadam/book-scr-bg-img-1-opt.jpg')] bg-cover bg-center relative "  >
-                    <img src="./images-vivek-kadam/book-scr-img-1-2-opt.jpg " className="absolute -right-20 top-25" />
+                    <img src="./images-vivek-kadam/book-scr-img-1-2-opt.jpg " className="absolute -right-10 md:-right-20 top-25" />
                 </div>
                 <div className="w-1/2 px-32 flex justify-center items-center">
                     <div className="flex flex-col gap-2">
@@ -39,7 +39,7 @@ const ZeroSection = (props) => {
                     </div>
                 </div>
                 <div className=" w-1/2 h-[680px]  bg-[url('./images-vivek-kadam/book-scr-bg-img-2-opt.jpg')] bg-cover bg-center relative "  >
-                    <img src="./images-vivek-kadam/book-scr-img-2-2-opt.jpg.webp " className="absolute -left-20 top-25" />
+                    <img src="./images-vivek-kadam/book-scr-img-2-2-opt.jpg.webp " className="absolute top-25  -left-10 md:-left-20 " />
                 </div>
             </div>
 
