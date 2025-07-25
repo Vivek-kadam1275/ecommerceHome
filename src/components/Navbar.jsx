@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react"
-import woodLogo from '../assets/wood-logo-dark.svg';
-import { GoPerson } from "react-icons/go";
+ import { GoPerson } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { LiaDollarSignSolid } from "react-icons/lia";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 const Navbar = (props) => {
@@ -17,33 +16,36 @@ const Navbar = (props) => {
             <div className="lg:flex  lg:w-[90%] lg:max-w-[1400px] h-full  items-center justify-between    hidden">
                 <div className="w-[75%] flex uppercase justify-between border-r  border-r-gray-200  h-full items-center text-[13px] lg:pr-8">
                     <div className="uppercase flex gap-3 flex-wrap  lg:w-[53%] lg:h-[40px]  ">
-                        <span className="flex items-center">Home <MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
-                        </span >
-                        <span className="flex items-center">shop <MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
-                        </span>
-                        <span className="flex items-center">blog<MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
-                        </span>
-                        <span className="flex items-center">Pages<MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
-                        </span>
-                        <span className="flex items-center">Elements<MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
-                        </span>
-                        <span className="flex items-center" >Buy
-                        </span>
+                        <Link to="#" className="flex items-center">Home <MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
+                        </Link >
+                        <Link to="#" className="flex items-center">shop <MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
+                        </Link >
+                        <Link to="#" className="flex items-center">blog<MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
+                        </Link >
+                       <Link to="#" className="flex items-center">Pages<MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
+                       </Link >
+                        <Link to="#" className="flex items-center">Elements<MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" />
+                        </Link >
+                        <Link to="#" className="flex items-center" >Buy
+                        </Link >
                     </div>
-                    <img src="./images-vivek-kadam/wood-logo-dark.svg" className="h-8 w-[210px]" />
+                    <Link to="/">
+                        <img src="./images-vivek-kadam/wood-logo-dark.svg" className="h-8 w-[210px]" />
+                    </Link>
+
                     <div className="flex gap-3 lg:max-w-[362px] lg:min-w-[100px]  justify-end flex-wrap">
-                        <span>faqs</span>
-                        <span className="flex items-center">contact us <MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" /></span>
+                        <Link to="#">faqs</Link >
+                        <Link to="#" className="flex items-center">contact us <MdOutlineKeyboardArrowDown className="text-md text-[#b8cde6]" /></Link >
                     </div>
                 </div>
 
                 <div className="flex lg:w-[25%] lg:min-w-[240px]  gap-4   items-center">
-                    <GoPerson className="w-7 h-7" />
-                    <CiSearch className="w-7 h-7" />
-                    <CiHeart className="w-7 h-7" />
-                    <div className="flex gap-2 items-center">
-                        <PiShoppingCartSimple className="w-7 h-7" />
-                        <span className="flex items-center justify-center">0 /<LiaDollarSignSolid />0.00
+                    <GoPerson className="w-7 h-7 cursor-pointer" />
+                    <CiSearch className="w-7 h-7 cursor-pointer" />
+                    <CiHeart className="w-7 h-7 cursor-pointer" />
+                    <div className="flex gap-2 items-center ">
+                        <PiShoppingCartSimple className="w-7 h-7 cursor-pointer" />
+                        <span className="flex items-center justify-center ">0 /<LiaDollarSignSolid />0.00
                         </span>
                     </div>
 
@@ -59,11 +61,11 @@ const Navbar = (props) => {
                     <button className="    ml-2 my-4" onClick={() => setIsMenuOpen(true)}>
                         <RxHamburgerMenu className="w-6 h-6" />
                     </button>
-                     <img src="./images-vivek-kadam/wood-logo-dark.svg" className="h-8 w-[210px]" />
-                     <div className="flex gap-3">
-                        <CiHeart className="w-7 h-7"/>
-                        <PiShoppingCartSimple className="w-7 h-7 stroke-[0.5]"/>
-                     </div>
+                    <img src="./images-vivek-kadam/wood-logo-dark.svg" className="h-8 w-[210px]" />
+                    <div className="flex gap-3">
+                        <CiHeart className="w-7 h-7" />
+                        <PiShoppingCartSimple className="w-7 h-7 stroke-[0.5]" />
+                    </div>
                 </div>
 
                 {isMenuOpen && (

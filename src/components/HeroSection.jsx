@@ -90,10 +90,10 @@ export default function HeroSection() {
           </h2>
           <p className="text-gray-600">{slides[current].description}</p>
           <div className="flex gap-4 mt-4 text-[12px] sm:text-sm">
-            <button className="px-6 py-2 bg-orange-400 text-white rounded-full hover:bg-orange-500">
+            <button className="cursor-pointer px-6 py-2 bg-orange-400 text-white rounded-full hover:bg-orange-500">
               Add to Cart
             </button>
-            <button className="px-6 py-2 border border-gray-800 text-gray-800 rounded-full hover:bg-gray-100">
+            <button className="cursor-pointer px-6 py-2 border border-gray-800 text-gray-800 rounded-full hover:bg-gray-100">
               View More
             </button>
           </div>
