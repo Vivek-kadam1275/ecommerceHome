@@ -9,9 +9,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 
 const Navbar = (props) => {
-    useEffect(()=>{
-        console.log(window.innerWidth)
-    },[]);
+    
     return (
         <div className="  lg:h-20 flex justify-center    border-b border-b-gray-200">
 
