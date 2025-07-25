@@ -6,7 +6,7 @@ import { PiShoppingCartSimple } from "react-icons/pi";
 
 const BookCard = ({ book }) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center md:w-1/4 sm:1/2">
 
       <div className="relative group cursor-pointer w-[283px] h-[323px]">
         <img src={book.image} className="" />

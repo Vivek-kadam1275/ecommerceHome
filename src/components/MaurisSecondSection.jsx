@@ -33,7 +33,7 @@ const MaurisSecondSection = (props) => {
             <h1 className="leading-none text-[42px] ">Coming Soon</h1>
             <p className="text-[14px] text-[#767676]">There are many variations of passages of lorem ipsum available.</p>
            
-            <div className="w-full flex flex-wrap justify-between">
+            <div className="w-full flex flex-wrap md:justify-between justify-center">
                 {books.map((book, id) => {
                     return (
                         <BookCard book={book} key={id} />

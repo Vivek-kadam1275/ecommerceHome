@@ -56,14 +56,6 @@ export default function HighlightsSection() {
     const [current, setCurrent] = useState(0);
     const [fade, setFade] = useState(false);
 
-    // const nextSlide = () => {
-    //     setFade(true);
-    //     setTimeout(() => {
-    //         setCurrent((prev) => (prev + 1) % slides.length);
-    //         setFade(false);
-    //     }, 400);
-    // };
-
 
 
     return (
@@ -72,13 +64,13 @@ export default function HighlightsSection() {
 
 
 
-            <div className="w-full       flex flex-wrap justify-between px-4">
+            <div className="w-full       flex flex-wrap md:justify-between px-4  justify-center">
                 {features.map((feat, index) => (
                     <div
                         key={index}
-                        className="flex "
+                        className="flex  "
                     >
-                        <div className="flex flex-col items-center min-w-[230px] max-w-[305px] h-[215.6px]   text-[14px]  px-[23px] gap-[8px]   transition-all duration-300 justify-center">
+                        <div className="flex flex-col items-center min-w-[230px] max-w-[305px] h-[215.6px]   text-[14px]  px-[23px] lg:gap-[8px]     transition-all duration-300 justify-center">
                             <div className="rounded-full bg-[#f3f4f6]  w-[96px] h-[96px] flex items-center justify-center">
                                 <img src={feat.image} className=" w-[40px] h-[40px]     " />
                             </div>
@@ -87,19 +79,19 @@ export default function HighlightsSection() {
                             <p className="uppercase underline  underline-offset-4 decoration-2 decoration-[#b58352] cursor-pointer">read more</p>
 
                         </div>
-                        {index <= 2 ? <div className="h-full w-[1px] bg-[#efefef]"></div> : <div className=""></div>}
+                        {index <= 2 ? <div className="h-full w-[1px] lg:bg-[#efefef]"></div> : <div className=""></div>}
                     </div>
                 ))}
             </div>
 
-            <div className="w-[1192px]  flex flex-wrap px-4 justify-between gap-1 ">
+            <div className="max-w-[1192px]  flex flex-wrap px-4 lg:justify-between md:justify-center gap-1 ">
 
                 {features2.map((feat, index) => {
 
 
                     return (
-                        <div className="w-[370px] h-[500px] overflow-hidden" key={index}>
-                            <div className={`group bg-cover bg-center p-6 w-[370px] h-[500px] cursor-pointer  relative`}>
+                        <div className="md:w-[370px]  w-full h-[500px] overflow-hidden" key={index}>
+                            <div className={`group bg-cover bg-center p-6 md:w-[370px] h-[500px] cursor-pointer  relative`}>
                                 <img
                                     src={feat.bg}
                                     alt=""

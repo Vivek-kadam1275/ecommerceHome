@@ -5,10 +5,10 @@ import { BsCursorFill } from "react-icons/bs";
 
 const FooterSection1 = (props) => {
     return (
-        <footer class="bg-white w-[1192px] mx-auto mt-20">
-            <div class="max-w-7xl mx-auto flex flex-wrap gap-4 justify-between text-sm">
+        <footer class="bg-white lg:max-w-[1192px]  mx-auto mt-20">
+            <div class="  flex flex-wrap justify-between    text-sm">
 
-                <div className="flex gap-3 flex-wrap">
+                <div className="flex gap-3 flex-wrap lg:w-[52%] md:w-full md:justify-around lg:min-w-[600px]">
                     <div class="w-full sm:w-[306px] h-[226px] space-y-4">
                         <div class="text-2xl font-bold flex items-center gap-2">
                             <img src="./images-vivek-kadam/wood-logo-dark.svg" alt="" />
@@ -52,40 +52,42 @@ const FooterSection1 = (props) => {
 
                 </div>
 
-                <div class="w-full sm:w-[174px] h-[235px] space-y-4">
-                    <h4 class="font-semibold text-lg">Our Stores</h4>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>New York</li>
-                        <li>London SF</li>
-                        <li>Edinburgh</li>
-                        <li>Los Angeles</li>
-                        <li>Chicago</li>
-                        <li>Las Vegas</li>
-                    </ul>
-                </div>
+                <div className="flex lg:w-[45%] md:w-full md:justify-around justify-between  ">
+                    <div class=" md:w-fit    w-1/3    space-y-4">
+                        <h4 class="font-semibold text-lg">Our Stores</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>New York</li>
+                            <li>London SF</li>
+                            <li>Edinburgh</li>
+                            <li>Los Angeles</li>
+                            <li>Chicago</li>
+                            <li>Las Vegas</li>
+                        </ul>
+                    </div>
 
-                <div class="w-full sm:w-[174px] h-[235px] space-y-4">
-                    <h4 class="font-semibold text-lg">Useful Links</h4>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Privacy Policy</li>
-                        <li>Returns</li>
-                        <li>Terms & Conditions</li>
-                        <li>Contact Us</li>
-                        <li>Latest News</li>
-                        <li>Our Sitemap</li>
-                    </ul>
-                </div>
+                    <div class=" md:w-fit  w-1/3  space-y-4">
+                        <h4 class="font-semibold text-lg">Useful Links</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>Privacy Policy</li>
+                            <li>Returns</li>
+                            <li>Terms & Conditions</li>
+                            <li>Contact Us</li>
+                            <li>Latest News</li>
+                            <li>Our Sitemap</li>
+                        </ul>
+                    </div>
 
-                <div class="w-full sm:w-[174px] h-[235px] space-y-4">
-                    <h4 class="font-semibold text-lg">Footer Menu</h4>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Instagram profile</li>
-                        <li>New Collection</li>
-                        <li>Woman Dress</li>
-                        <li>Contact Us</li>
-                        <li>Latest News</li>
-                        <li><em>Purchase Theme</em></li>
-                    </ul>
+                    <div class="md:w-fit  w-1/3  space-y-4">
+                        <h4 class="font-semibold text-lg">Footer Menu</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li>Instagram profile</li>
+                            <li>New Collection</li>
+                            <li>Woman Dress</li>
+                            <li>Contact Us</li>
+                            <li>Latest News</li>
+                            <li><em>Purchase Theme</em></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>

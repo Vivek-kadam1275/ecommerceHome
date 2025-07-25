@@ -2,7 +2,7 @@ import React from "react"
 
 const TypewriterSection = (props) => {
     return (
-        <div className="max-w-[1192px] mx-auto pt-20 flex gap-4">
+        <div className="max-w-[1192px] mx-auto pt-20 md:flex flex flex-col md:flex-row justify-center items-center  gap-4">
 
             <div className=" w-[80%] overflow-hidden flex ">
                 <img src="./images-vivek-kadam/book-typewriter-img-left.png" alt="" className="w-1/2" />
@@ -22,7 +22,7 @@ const TypewriterSection = (props) => {
             <div className="flex flex-col w-[20%] gap-4 ">
 
                  
-                    <img src="./images-vivek-kadam/book-typewriter-right-1-opt.jpg.webp" alt="" />
+                    <img src="./images-vivek-kadam/book-typewriter-right-1-opt.jpg.webp" alt="" className=""/>
                     <img src="./images-vivek-kadam/book-typewriter-right-2-opt.jpg.webp" alt="" />
                 
 

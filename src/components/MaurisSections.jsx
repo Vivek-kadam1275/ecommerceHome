@@ -59,10 +59,10 @@ const MaurisSection = (props) => {
                 <button className="uppercase  hover:underline underline-offset-4 decoration-2 decoration-[#b58352] transition-all duration-700">Fantansy</button>
                 <button className="uppercase  hover:underline underline-offset-4 decoration-2 decoration-[#b58352] transition-all duration-700">History</button>
             </div>
-            <div className="w-full flex flex-wrap gap-[20px]">
+            <div className="w-full flex flex-wrap sm:justify-center">
               {books.map((book,id)=>{
                 return(
-                    <BookCard book={book} key={id}/>
+                    <BookCard book={book} key={id}/> 
                 );
               })}
             </div>

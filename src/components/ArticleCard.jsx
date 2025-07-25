@@ -4,7 +4,7 @@ import { FaRegMessage } from "react-icons/fa6";
 
 const ArticleCard = ({ article }) => {
     return (
-        
+
 
         <div
             className="group w-[404px] h-[416px] relative text-white flex flex-col flex-wrap cursor-pointer  
@@ -24,11 +24,11 @@ const ArticleCard = ({ article }) => {
 
             <div className="h-1/2 w-full flex flex-col justify-end items-center gap-4 pb-4 relative z-10">
                 <p className="w-fit text-[11.2px] py-1 px-2 bg-[#ae7d5e]">{article.type}</p>
-                <p className="w-fit text-[22px]">{article.title}</p>
-                <p className="flex items-center w-fit gap-1 text-[#9f9f9f] text-[17px]">
+                <p className="w-fit lg:text-[22px]">{article.title}</p>
+                <p className="flex items-center w-fit gap-1 text-[#9f9f9f] lgtext-[17px]">
                     <span>Posted by</span>
                     <img src="./images-vivek-kadam/avatar-home.jpg.webp" alt="" />
-                    <span>{article.postedBy}</span>
+                    <span >{article.postedBy}</span>
                     <RxShare1 />
                     <FaRegMessage />
                 </p>

@@ -34,7 +34,7 @@ const CommodoSection = (props) => {
                     There are many variations of passages of lorem ipsum available.
                 </p>
             </div>
-            <div className="flex gap-6 mt-4">
+            <div className="flex gap-6 mt-4 flex-wrap lg:flex-nowrap justify-center">
                 {articles.map((article, id) => {
                     return (
                         <ArticleCard key={id} article={article} />

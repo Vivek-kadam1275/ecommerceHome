@@ -7,7 +7,7 @@ import { PiShoppingCartSimple } from "react-icons/pi";
 const BookCard2 = ({ book }) => {
   return (
     <div>
-      <div className="group w-[288px] h-[397px] bg-cover bg-center  cursor-pointer " style={{ backgroundImage: `url(${book.image})` }} >
+      <div className="group  w-[288px] h-[397px] bg-cover bg-center  cursor-pointer " style={{ backgroundImage: `url(${book.image})` }} >
         <div className=" w-full h-full hover:bg-black/40    flex items-center justify-center relative">
           <div className="hidden  group-hover:flex  flex-col justify-center items-center gap-2 cursor-grab">
             <p>{book.name}</p>

@@ -40,7 +40,7 @@ const books=[
 ] 
 const SecondBooksSection = (props) => {
   return (
-    <div className="   flex justify-between items-center pt-20 text-white">
+    <div className="   flex lg:justify-between flex-wrap gap-y-4 gap-x-4 justify-center items-center pt-20 text-white">
 
          {books.map((book,id)=>{
                 return(<BookCard2 key={id} book={book}/>)

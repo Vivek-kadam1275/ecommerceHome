@@ -42,12 +42,12 @@ export default function HeroSection() {
           : (prev - 1 + slides.length) % slides.length
       );
       setAnimating(false);
-    }, 400); // match with animation
+    }, 4000);
   };
 
   return (
-    <section className="group relative  mx-auto w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center px-6 sm:px-12 bg-cover bg-center " style={{ backgroundImage: `url(${slides[current].bg})` }}>
-      {/* Arrows */}
+    <section className="group relative  mx-auto   lg:mt-0 w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center px-6 sm:px-12 bg-cover bg-center " style={{ backgroundImage: `url(${slides[current].bg})` }}>
+
       <button
         onClick={() => goToSlide("prev")}
         className="absolute left-4 z-10 bg-white/80 hover:bg-white/100  p-3 rounded-full shadow opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
@@ -62,9 +62,9 @@ export default function HeroSection() {
         <FaChevronRight />
       </button>
 
-      {/* Slide Content */}
+
       <div className="flex items-center justify-between w-full max-w-[1192px] h-full gap-6 " >
-        {/* Left image */}
+
         <div className="w-1/2 flex items-center justify-center h-full transition-all duration-500 ease-in-out">
           <img
             key={slides[current].image}
@@ -75,22 +75,21 @@ export default function HeroSection() {
           />
         </div>
 
-        {/* Right content */}
         <div
           key={slides[current].title}
           className={`w-1/2 space-y-5 transition-all duration-500 ease-in-out ${animating
-              ? "opacity-0 translate-y-6"
-              : "opacity-100 translate-y-0"
+            ? "opacity-0 translate-y-6"
+            : "opacity-100 translate-y-0"
             }`}
         >
           <p className="text-sm uppercase text-gray-500 tracking-widest">
             {slides[current].subtitle}
           </p>
-          <h2 className="text-4xl font-bold text-gray-800 leading-snug">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 leading-snug">
             {slides[current].title}
           </h2>
           <p className="text-gray-600">{slides[current].description}</p>
-          <div className="flex gap-4 mt-4">
+          <div className="flex gap-4 mt-4 text-[12px] sm:text-sm">
             <button className="px-6 py-2 bg-orange-400 text-white rounded-full hover:bg-orange-500">
               Add to Cart
             </button>
